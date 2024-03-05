@@ -1,4 +1,4 @@
-var script_url = "https://script.google.com/macros/s/AKfycbx1mvDMQNM7y25-sywvl2R_TmD8NfdNMRiry3azKq73hNN0Hf-ET1H1tVunT5jVxV9G/exec";
+var script_url = "https://script.google.com/macros/s/AKfycbzY746It4FsLcGTSEH1xISioMQad25g07foXDlgk7uYcGsi0Am5A26ncrBA1oC2lmDzRA/exec";
 $(document).ready(function ($) {
     $("#google-sheet").submit(function (event) {
         //$('#date, #time, #name, #phone').prop("disabled", false);
@@ -15,7 +15,7 @@ $(document).ready(function ($) {
         request.always(function () {
 			$('#name').prop("disabled", true);
         });
-		alert("登錄完成!!");
+		//alert("登錄完成!!");
         event.preventDefault();
     })
 })
