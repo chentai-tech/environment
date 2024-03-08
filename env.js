@@ -3,8 +3,7 @@ $(document).ready(function ($) {
     $("#google-sheet").submit(function (event) {
 		$('#name').prop("disabled", false);
         var name = $("#name").val();
-		const user = $("#name").val();
-		google.script.run.withSuccessHandler(displayMessage).processUserInput(user);
+		google.script.run.withSuccessHandler(displayMessage).search(name);
 		
 		var url = script_url + "?callback=ctrlq&name=" + name + "&action=create";
         var request = $.ajax({
